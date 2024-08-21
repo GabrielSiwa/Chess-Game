@@ -6,6 +6,23 @@ html, body {
     box-sizing: border-box;
 }
 
+footer {
+    margin-top: 5%;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    background-color: #7d00c1;
+    padding: 10px 0;
+    color: antiquewhite;
+}
+
+a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+
 *, *::before, *::after {
     box-sizing: border-box;
 }
@@ -26,7 +43,7 @@ html, body {
     margin-left: 59px;
 }
 
-.turnhighlight { /* Fixed typo from turnheightlight */
+.turnhighlight {
     background: #5cb85c;
     color: #fff;
 }
@@ -49,6 +66,7 @@ html, body {
     margin: 3px;
     padding: 15px 0 0 20px;
 }
+
 .gamecell {
     border: 1px solid #00a4a2;
     width: 100%;
@@ -78,6 +96,48 @@ html, body {
     background: lightgreen;
 }
 
+.piece {
+    margin-top: 5px;
+    padding: 10px;
+    width: 40px;
+    height: 40px;
+    background-size: cover;
+    background-position: center;
+}
+
+.white {
+    background-color: white;
+}
+
+.black {
+    background-color: black;
+}
+
+.pawn {
+    background-image: url('img/white-pawn.png');
+}
+
+.rook {
+    background-image: url('img/white-rook.png');
+}
+
+.knight {
+    background-image: url('img/white-knight.png');
+}
+
+.bishop {
+    background-image: url('img/white-bishop.png');
+}
+
+.queen {
+    background-image: url('img/white-queen.png');
+}
+
+.king {
+    background-image: url('img/white-king.png');
+}
+
+
 .shake-little {
     display: inline-block;
     transform-origin: center center;
@@ -87,9 +147,10 @@ html, body {
 .shake-trigger:hover .shake-constant.shake-constant--hover {
     animation-play-state: running;
 }
+
 .shake-freeze:hover, 
 .shake-trigger:hover, .shake-freeze, .shake-little:hover,
-.shake-trigger:hover .shake-little  {
+.shake-trigger:hover .shake-little {
     animation-play-state: running;
 }
 
